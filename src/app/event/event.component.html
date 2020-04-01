@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-content>
+        <section>
+            <h2>{{title}}</h2>
+            <app-child 
+            [title]="title"
+            [value]="value"
+            (plusOne)="incBy(1)"
+            (plusTwo)="incBy(2)"
+            (minusOne)="incBy(-1)"
+            (minusTwo)="incBy(-2)"
+            ></app-child>
+        </section>
+    </mat-card-content>
+</mat-card>

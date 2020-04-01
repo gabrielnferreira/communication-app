@@ -1,0 +1,11 @@
+<mat-card>
+    <!-- <p>Nome: {{name}}</p>
+    <p>Sobrenome: {{othername}}</p>
+    <p>Idade: {{age}}</p> -->
+    
+    <h1>Input Binding com objetos:</h1>
+    <div *ngFor="let c of clients">
+        <app-client [client]="c"></app-client>
+        <hr>
+    </div>
+</mat-card>
