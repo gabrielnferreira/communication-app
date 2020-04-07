@@ -5,10 +5,7 @@
             <app-child 
             [title]="title"
             [value]="value"
-            (plusOne)="incBy(1)"
-            (plusTwo)="incBy(2)"
-            (minusOne)="incBy(-1)"
-            (minusTwo)="incBy(-2)"
+            (inc)="incBy($event)"
             ></app-child>
         </section>
     </mat-card-content>

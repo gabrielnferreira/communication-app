@@ -1,0 +1,21 @@
+<mat-card>
+
+    <mat-card-title>Variáveis de template</mat-card-title>
+    <button mat-button color="primary" (click)="stopwatch.start()">Start</button>
+    <button mat-button color="accent" (click)="stopwatch.stop()">Stop</button>
+    <button mat-button color="warn" (click)="stopwatch.clear()">Clear</button>
+
+    <app-timer #stopwatch></app-timer>
+</mat-card>
+
+
+<mat-card>
+
+    <mat-card-title>ViewChild</mat-card-title>
+    <button mat-button color="primary" (click)="start()">Start</button>
+    <button mat-button color="accent" (click)="stop()">Stop</button>
+    <button mat-button color="warn" (click)="clear()">Clear</button>
+
+    <app-timer #stopwatch2></app-timer>
+    <p #myP>Referência de elemento</p>
+</mat-card>
