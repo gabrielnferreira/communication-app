@@ -24,6 +24,8 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ParentChildComponent } from './parent-child/parent-child.component';
 import { TimerComponent } from './parent-child/timer/timer.component';
+import { OnChangesComponent } from './on-changes/on-changes.component';
+import { NameChangeComponent } from './on-changes/name-change/name-change.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { TimerComponent } from './parent-child/timer/timer.component';
     ClientsComponent,
     ItemClientComponent,
     ParentChildComponent,
-    TimerComponent
+    TimerComponent,
+    OnChangesComponent,
+    NameChangeComponent
   ],
   imports: [
     BrowserModule,
